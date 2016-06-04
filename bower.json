@@ -1,0 +1,23 @@
+{
+  "name": "AngularJS-Controller",
+  "homepage": "https://github.com/mbolanosc/AngularJS-Controller",
+  "authors": [
+    "Maria Fernanda Bolanos C."
+  ],
+  "description": "angularJS first controller",
+  "main": "index.html",
+  "keywords": [
+    "AngularJS"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.6"
+  }
+}
