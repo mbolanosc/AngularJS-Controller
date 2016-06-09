@@ -12,6 +12,17 @@ angular.module('todoapp',[])
 		];
 
 		todo.add = function(){
-			todo.todos.push(());
-		}
+			todo.list.push({text: todo.todoText, done: false});
+			todo.todoText='';
+		};
+
+		todo.delete = function(){
+			var oldTodos = todo.list;
+			todo.list = [];
+			angular.forEach(oldTodos, function (oldTodo){
+				if(!oldTodo.done){
+					todo.list.push(oldTodo);
+				};
+			});
+		};
 	});
