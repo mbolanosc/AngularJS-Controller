@@ -7,6 +7,19 @@
 	<script src='controllers.js'></script>
 </head>
 <body>
-	
+	<h2>My TODO list.</h2>
+
+
+	<div ng-controller="todoController as todo">
+	 <!--controlador con un alias ya que en el controlador se utiliza un this. -->
+	 <span>{{todo.remainging}} of {{todo.list.length}} remaining</span>
+	 	<a href="#" ng-click="todo.delete()">Delete</a>
+		<ul>
+			<li ng-repeat= "todo in todo.list">
+				<input type="checkbox" name="done" ng-model="todo.done">
+				<span>{{todo.text}}</span>
+			</li>
+		</ul>
+	</div>
 </body>
 </html>
